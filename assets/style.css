@@ -45,7 +45,7 @@ h1, h2, h3,h4, h5, h6 {
   min-height: 70%;
   border-radius: 12px;
   background: white;
-  width: 380px;
+  width: 360px;
 }
 
 #hero-container {
@@ -162,4 +162,19 @@ h1, h2, h3,h4, h5, h6 {
 
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+@media (max-width: 375px) {
+  body {
+    background: url('../images/pattern-background-mobile.svg') no-repeat;
+    background: var(--pale-blue);
+    font-size: 16px;
+    background-size: 100% 50%;
+    background-position: top;
+    background-color: hsl(225, 100%, 94%);
+  }
+
+  #card {
+    width: 90%;
+  }
 }
